@@ -12,3 +12,12 @@ class Singleton(object):
      
    def __str__(self):
      return str(self.__shared_state)
+
+param = Singleton(VT='Virginia Tech')
+
+print(param)
+print(param,VT)
+
+y = Singleton(MSS='MolSSI software scientist')
+
+print(param.MSS)
