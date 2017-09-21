@@ -13,6 +13,8 @@ class Singleton(object):
    def __str__(self):
      return str(self._shared_state)
 
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 param = Singleton(VT='Virginia Tech')
 
 print(param)
