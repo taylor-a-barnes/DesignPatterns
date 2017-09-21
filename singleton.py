@@ -8,7 +8,7 @@ class Singleton(object):
    
    def __init__(self, **kwargs):
      self.__dict__ = self._shared_data
-     _shared_data.update(kwargs)
+     self._shared_data.update(kwargs)
      
    def __str__(self):
      return str(self._shared_data)
@@ -18,7 +18,7 @@ class Singleton(object):
 param = Singleton(VT='Virginia Tech')
 
 print(param)
-print(param,VT)
+print(param.VT)
 
 y = Singleton(MSS='MolSSI software scientist')
 
